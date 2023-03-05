@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wordle Game</title>
+	<style>
+		#wordle {
+			font-size: 2em;
+			margin-top: 20px;
+		}
+		#guess {
+			font-size: 1.5em;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Wordle Game</h1>
+	<p>Guess the secret five-letter word:</p>
+	<div id="wordle"></div>
+	<p>Enter your guess:</p>
+	<input type="text" id="guess" maxlength="5">
+	<button onclick="checkGuess()">Check</button>
+	<p id="result"></p>
+
+	<script src="wordle.js"></script>
+</body>
+</html>
