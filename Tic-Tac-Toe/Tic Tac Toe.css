@@ -1,0 +1,63 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 72px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #f9f9f9;
+}
+
+.cell.x {
+  color: red;
+}
+
+.cell.o {
+  color: blue;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#reset {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#reset:hover {
+  background-color: #e0e0e0;
+}
